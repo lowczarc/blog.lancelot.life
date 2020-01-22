@@ -1,21 +1,29 @@
-# Why you should take a look at functionnal programming</h1>
+---
+title: Why you should take a look at functionnal programming
+publish_date: 22 January 2020
+---
 
-Caution: I'm not a functionnal programming expert, I don't really know any fully functionnal programming language and I don't know most of the functionnal programming concepts. This article is just to explain why I find it interesting.
+::: caution
+**Caution:** I'm not a functionnal programming expert, I don't really know any fully functionnal programming language and I don't know most of the functionnal programming concepts. This article is just to explain why I find it interesting.
+:::
 
-Basically functionnal programming is a way of coding using only functions, without mutable variables.
-
+Basically functionnal programming is a way of coding using only functions, without mutable variables.<br/>
 The first functionnal programming language is the lambda calculus:
+
 ```
 The function for true: (λx.λy.x)
 The function for false: (λx.λy.y)
 The function for NOT: (λx.x((λx.λy.y), (λx.λy.x)))
 The function for OR: (λx.λy.x((λx.λy.x)¸ y((λx.λy.x), (λx.λy.y))))
 The function for AND: (λx.λy.x(y((λx.λy.x), (λx.λy.y)), (λx.λy.λy)))
-The YCombinator: (λf.(λx.f(x, x))(λx.(f(x, x))))</div>
+The YCombinator: (λf.(λx.f(x, x))(λx.(f(x, x))))
 ```
-Even if it's theorically really interesting, the lambda calculus can be really hard to read
 
-In this language there wasn't any variable concept, everything is a function, but in most modern fully functionnal programming languages you can define constants and use numbers, arrays, etc...
+::: subtitle
+Even if it's theoretically really interesting, the lambda calculus can be really hard to read
+:::
+
+In this language there wasn't any variable concept, everything is a function, but in most modern fully functionnal programming languages you can define constants and use numbers, arrays, etc...<br/>
 Although mutable variables aren't allowed.
 
 You can't use for/while loop (because it would use an iterator index) instead you have to use recursivity.
@@ -58,26 +66,26 @@ Functionnal programming force us to make recursive algorithms instead of iterati
 
 ```
 fn recursive_fibo(n: u32) -> u32 {
-match n {
-0 | 1 => n,
-_ => recursive_fibo(n - 1) + recursive_fibo(n - 2),
-}
+	match n {
+		0 | 1 => n,
+		_ => recursive_fibo(n - 1) + recursive_fibo(n - 2),
+	}
 }
 
 fn iterative_fibo(n: u32) -> u32 {
-let mut n_minus_1 = 0;
-let mut res = 1;
+	let mut n_minus_1 = 0;
+	let mut res = 1;
 
-if n < 2 {
-return n;
-}
+	if n < 2 {
+		return n;
+	}
 
-for _ in 1..n {
-let n_minus_2 = n_minus_1;
-n_minus_1 = res;
-res = n_minus_2 + n_minus_1;
-}
-res
+	for _ in 1..n {
+		let n_minus_2 = n_minus_1;
+		n_minus_1 = res;
+		res = n_minus_2 + n_minus_1;
+	}
+	res
 }
 ```
 
@@ -85,7 +93,10 @@ res
 Execution time recursive_fibo(42): 0m4.562s
 Execution time iterative_fibo(42): 0m0.002s
 ```
-Even if the recursive one is much more beautiful, the iterative one is more performant</div>
+::: subtitle
+Even if the recursive one is much more beautiful, the iterative one is more performant
+:::
+
 ## Conclusion
 
 I will try to keep the functionnal programming concepts in mind, see where it's useful and doesn't make any/too much running speed difference and use it to think about parallelism.

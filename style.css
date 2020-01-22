@@ -89,7 +89,8 @@ section p {
 	line-height: 1.5;
 }
 
-section .code {
+section pre code {
+	display: block;
 	font-family: monospace;
 	white-space: pre-wrap;
 	background-color: #eee;
@@ -99,17 +100,21 @@ section .code {
 	border-radius: 6px;
 }
 
-section .subtitle {
+section .subtitle p {
+	font-size: 16px;
 	font-style: italic;
+	line-height: normal;
 	text-align: center;
 	margin: 0 30px;
 }
 
-section .caution {
+section .caution p {
 	margin: 20px 0;
+	line-height: normal;
 	padding: 10px;
 	background-color: #f9d4ae;
 	border: 1px solid #e2964a;
 	border-radius: 6px;
+	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 }
