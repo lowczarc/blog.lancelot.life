@@ -2,7 +2,12 @@
 <html>
 	<head>
 		<title>Why you should take a look at functionnal programming - Lancelot Blog</title>
-		<link rel="icon" type="image/png" href="/lancelot.png" />
+		<link rel="icon" type="image/png" href="https://lancelot.life/lancelot.png" />
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:url" content="https://blog.lancelot.life/why_you_should_take_a_look_at_functionnal_programming/">
+		<meta name="twitter:title" content="Why you should take a look at functionnal programming">
+		<meta name="twitter:description" content="Basically functionnal programming is a way of coding using only functions, without mutable variables.">
+		<meta name="twitter:image" content="https://lancelot.life/lancelot.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/style.css" type="text/css" />
 	</head>
@@ -33,7 +38,7 @@ The function for NOT: (λx.x((λx.λy.y), (λx.λy.x)))
 The function for OR: (λx.λy.x((λx.λy.x)¸ y((λx.λy.x), (λx.λy.y))))
 The function for AND: (λx.λy.x(y((λx.λy.x), (λx.λy.y)), (λx.λy.λy)))
 The YCombinator: (λf.(λx.f(x, x))(λx.(f(x, x))))</div>
-				<div class="subtitle">Even if it's theorically really interesting, the lambda calculus can be really hard to read</div>
+				<div class="subtitle">Even if it's theoretically really interesting, the lambda calculus can be really hard to read</div>
 				<p>
 					In this language there wasn't any variable concept, everything is a function, but in most modern fully functionnal programming languages you can define constants and use numbers, arrays, etc...<br/>Although mutable variables aren't allowed.
 				</p>
