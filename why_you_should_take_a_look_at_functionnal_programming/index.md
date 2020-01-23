@@ -8,7 +8,7 @@ publish_date: 22 January 2020
 :::
 
 Basically functionnal programming is a way of coding using only functions, without mutable variables.<br/>
-The first functionnal programming language is the lambda calculus:
+The first functionnal programming language is the [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus):
 
 ```
 The function for true: (λx.λy.x)
