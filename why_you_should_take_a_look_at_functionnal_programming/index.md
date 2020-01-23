@@ -50,7 +50,7 @@ D = an_other_slow_function(A) // Here you can compute C and D in parallel
 E = something3(C, D)
 ```
 
-To know what you can compute in parallel you just have to draw a graph of the constant and draw an arrow between the constants and the other constants used in its definition.
+To know what you can compute in parallel you just have to draw a graph of the constants and draw an arrow between the constants and the other ones used in its definition.
 
 ```
 A -> B -> C -> E
