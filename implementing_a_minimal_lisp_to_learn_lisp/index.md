@@ -249,7 +249,7 @@ The scope management is really basic and stupid, I will probably change it later
 
 ## Conclusion
 
-That's all for now. There are a lot of features missing to claim it to be a real Lisp language (quotes, macros ...) but I have to admit I don't really understand them yet.<br>
+That's all for now. There are a lot of features missing to claim it to be a real Lisp language (quotes, macros ...) but I have to admit that I don't really understand them yet.<br>
 I'll continue to improve it on github and if I find it interesting I may write other articles on this subject.
 
 ## Erratum on the last article
