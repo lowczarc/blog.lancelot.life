@@ -214,8 +214,4 @@ section .preContainer .response {
         padding: 10px;
         font-family: monospace;
         font-size: 12px;
-	width: 100%;
-        overflow: auto;
-        position: relative;
-        white-space: nowrap;
 }
