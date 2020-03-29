@@ -1,191 +1,191 @@
 @import url('https://fonts.googleapis.com/css?family=Lancelot|Lato&display=swap');
 
 body {
-	margin: 0;
-	border-top: 9px solid #c35;
-	font-family: Georgia, Times, serif;
+  margin: 0;
+  border-top: 9px solid #c35;
+  font-family: Georgia, Times, serif;
 }
 
 a { 
-	color: black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 @media only screen and (min-width: 968px) {
-	header {
-		margin-right: 32px;
-	}
+  header {
+    margin-right: 32px;
+  }
 }
 
 header {
-	width: 256px;
+  width: 256px;
 
-	text-align: center;
-	font-size: 15px;
-	margin-bottom: 32px;
-	padding-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 32px;
+  padding-top: 20px;
 }
 
 p {
-	color: #111;
+  color: #111;
 }
 
 p a {
-	color: #c35;
-	text-decoration: none;
-	border-bottom: 1px dashed #c35;
+  color: #c35;
+  text-decoration: none;
+  border-bottom: 1px dashed #c35;
 }
 
 p a:hover {
-	border-bottom: 1px solid #c35;
+  border-bottom: 1px solid #c35;
 }
 
 header h1 {
-	font-family: 'Lancelot', cursive;
-	font-size: 25px;
-	margin: 10px;
+  font-family: 'Lancelot', cursive;
+  font-size: 25px;
+  margin: 10px;
 }
 
 header p {
-	margin: 0;
-	line-height: 1.5;
-	font-family: 'Lato', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
 }
 
 header img#logo {
-	width: 100px;
+  width: 100px;
 }
 
 section {
-	width: 640px;
-	margin: 20px;
+  width: 640px;
+  margin: 20px;
 }
 
 section h1 {
-	font-size: 36px;
-	font-weight: 400;
-	line-height: 1.5;
-	margin-top: 0;
-	margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 section h2 {
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 1.5;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
 
-	font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 section p {
-	font-size: 20px;
-	line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 *:not(pre) > code {
-	font-size: 15px;
-	padding: 1px 5px;
-	background-color: #eee;
-	border: 1px solid #ccc;
-	color: #444;
-	border-radius: 4px;
+  font-size: 15px;
+  padding: 1px 5px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  color: #444;
+  border-radius: 4px;
 }
 
 section pre {
-	display: block;
-	font-family: monospace;
-	white-space: pre-wrap;
-	background-color: #eee;
-	padding: 10px;
-	margin: 6px 0;
-	border: 1px solid #ccc;
-	color: black;
-	font-size: 12px;
-	border-radius: 6px;
+  display: block;
+  font-family: monospace;
+  white-space: pre-wrap;
+  background-color: #eee;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  color: black;
+  font-size: 12px;
+  border-radius: 6px;
 }
 
 section .subtitle p, figure figcaption {
-	font-size: 16px;
-	font-style: italic;
-	line-height: normal;
-	text-align: center;
-	margin: 0 30px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: normal;
+  text-align: center;
+  margin: 0 30px;
 }
 
 section .caution p {
-	margin: 20px 0;
-	line-height: normal;
-	padding: 10px;
-	background-color: #f9d4ae;
-	border: 1px solid #e2964a;
-	border-radius: 6px;
-	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+  margin: 20px 0;
+  line-height: normal;
+  padding: 10px;
+  background-color: #f9d4ae;
+  border: 1px solid #e2964a;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
 figure {
-	margin: 0 auto;
-	text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 figure img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 section pre {
-	display: flex;
+  display: flex;
 }
 
 section pre code, section pre textarea {
-	flex: 1;
+  flex: 1;
 }
 
 section pre textarea {
-        border: none;
-        background-color: #eee;
+  border: none;
+  background-color: #eee;
 }
 
 section pre.rust::after {
-	content: '🦀';
-	display: block;
-	height: 0;
-	text-align: right;
-	padding-left: 10px;
+  content: '🦀';
+  display: block;
+  height: 0;
+  text-align: right;
+  padding-left: 10px;
 }
 
 section pre.mini-lisp::after {
-	content: 'λ';
-	display: block;
-	height: 0;
-	text-align: right;
-	font-weight: bold;
-	padding-left: 10px;
+  content: 'λ';
+  display: block;
+  height: 0;
+  text-align: right;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 section pre .control_buttons {
-	padding-left: 10px;
+  padding-left: 10px;
 }
 
 section pre .control_buttons.start:hover::before {
-        color: green;
+  color: green;
 }
 
 section pre .control_buttons::before {
-        display: block;
-        color: #888;
-        font-size: 15px;
-        font-weight: bold;
-        content: '▶';
-        margin-top: -3px;
-        cursor: pointer;
+  display: block;
+  color: #888;
+  font-size: 15px;
+  font-weight: bold;
+  content: '▶';
+  margin-top: -3px;
+  cursor: pointer;
 }
 
 section .preContainer pre {
@@ -197,21 +197,21 @@ section .preContainer {
 }
 
 section .preContainer {
-        display: flex;
-        flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 section .preContainer pre:not(:last-child) {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 section .preContainer .response {
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
-	border: 1px solid #ccc;
-        border-top: 0;
-        padding: 10px;
-        font-family: monospace;
-        font-size: 12px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 12px;
 }
