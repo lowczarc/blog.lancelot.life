@@ -7,7 +7,7 @@ publish_date: 29 March 2020
 **Caution:** I am still in the process of learning, I don't claim to be a Lisp programmer, I don't claim to really understand Lisp nor Functionnal programming either. This blog article reflects my path in the weird but fascinating world of functionnal programming.
 :::
 
-A few weeks ago, a friend of mine talked about his willing to learn Lisp. At this time Lisp was for me a synonymous of parentheses hell.
+A few weeks ago, a friend of mine talked about his willing to learn Lisp. At this time Lisp was for me a synonym of parentheses hell.
 
 I did some research and I felt like, in its minimal form, Lisp was kind of a "readable lambda calculus". I liked it.
 
@@ -54,7 +54,7 @@ In Lisp the function calls are just list with the first element being the functi
 We want this to print the result of the addition of 6 and 7
 :::
 
-We can make a function eval which take a context (for the functions definitions) and a List.
+We can make a function eval which takes a context (for the functions definitions) and a List.
 
 Because we want our structure and our data to be the same thing we will need to add some elements to our enum :
 
@@ -113,7 +113,7 @@ fn eval(context: &mut Context, program: Vec<Slisp>) -> Slisp {
 
 This function will be used in the first call of the program and to evaluate the arguments of the functions if they are lists.
 
-To make it easier to write functions later we can already make a function which take a Slisp and evaluate it if it's a list and take its value in the context if it's an atom.
+To make it easier to write functions later we can already make a function which takes a Slisp and evaluates it if it's a list and takes its value in the context if it's an atom.
 
 ```rust
 fn get_value(context: &mut Context, literal: Slisp) -> Slisp {
@@ -133,7 +133,7 @@ fn get_value(context: &mut Context, literal: Slisp) -> Slisp {
 }
 ```
 
-We can already add the [basics arithmetics functions](https://github.com/lowczarc/Lisp-Interpreter/blob/5edc294/src/functions/arithmetics.rs), the [minimal lists functions](https://github.com/lowczarc/Lisp-Interpreter/blob/5edc294/src/functions/list.rs), [print and if_else](https://github.com/lowczarc/Lisp-Interpreter/blob/5edc294/src/functions/utils.rs) and a [function to add an element to the context](https://github.com/lowczarc/Lisp-Interpreter/blob/5edc294/src/functions/def.rs)
+We can already add the [basic arithmetics functions](https://github.com/lowczarc/Lisp-Interpreter/blob/5edc294/src/functions/arithmetics.rs), the [minimal lists functions](https://github.com/lowczarc/Lisp-Interpreter/blob/5edc294/src/functions/list.rs), [print and if_else](https://github.com/lowczarc/Lisp-Interpreter/blob/5edc294/src/functions/utils.rs) and a [function to add an element to the context](https://github.com/lowczarc/Lisp-Interpreter/blob/5edc294/src/functions/def.rs)
 
 At this point, our language is just a dumb calculator and isn't Turing Complete
 
@@ -167,7 +167,7 @@ The first argument is the parameter name and the second is the body of the funct
 A naive recursive function for fibonnacci
 :::
 
-A lambda take only one parameter but you can define multiple arguments functions by nest them.
+A lambda takes only one parameter but you can define multiple argument functions by nesting them.
 
 ```mini-lisp
 (def range
@@ -249,7 +249,7 @@ The scope management is really basic and stupid, I will probably change it later
 
 ## Conclusion
 
-That's all for now, there is a lot of features missing to claim it to be a real Lisp language (quotes, macros ...) but I have to admit I don't really understand them yet.<br>
+That's all for now. There are a lot of features missing to claim it to be a real Lisp language (quotes, macros ...) but I have to admit I don't really understand them yet.<br>
 I'll continue to improve it on github and if I find it interesting I may write other articles on this subject.
 
 ## Erratum on the last article
@@ -257,7 +257,7 @@ I'll continue to improve it on github and if I find it interesting I may write o
 In the paragraph "Downsides" of my [last article](/why_you_should_take_a_look_at_functionnal_programming/#downsides) I made a mistake.
 
 I've said recursive algorithms can lead to a lack of performance and take the example of the function fibonnacci.<br>
-First, you can construct an recursive equivalent of any iterative function, in the case of fibonnacci :
+First, you can construct a recursive equivalent for any iterative function, in the case of fibonnacci :
 
 ```mini-lisp
 (def range

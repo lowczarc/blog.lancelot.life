@@ -144,8 +144,13 @@ section pre {
 	display: flex;
 }
 
-section pre code {
+section pre code, section pre textarea {
 	flex: 1;
+}
+
+section pre textarea {
+        border: none;
+        background-color: #eee;
 }
 
 section pre.rust::after {
@@ -153,6 +158,7 @@ section pre.rust::after {
 	display: block;
 	height: 0;
 	text-align: right;
+	padding-left: 10px;
 }
 
 section pre.mini-lisp::after {
@@ -161,4 +167,5 @@ section pre.mini-lisp::after {
 	height: 0;
 	text-align: right;
 	font-weight: bold;
+	padding-left: 10px;
 }
