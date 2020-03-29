@@ -64,7 +64,7 @@ We clearly see here that B and C can be computed in parallel of D
 
 Functionnal programming force us to make recursive algorithms instead of iterative ones, which can lead to a lack of performance.
 
-```
+```rust
 fn recursive_fibo(n: u32) -> u32 {
 	match n {
 		0 | 1 => n,
