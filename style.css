@@ -169,3 +169,51 @@ section pre.mini-lisp::after {
 	font-weight: bold;
 	padding-left: 10px;
 }
+
+section pre .control_buttons {
+	padding-left: 10px;
+}
+
+section pre .control_buttons.start:hover::before {
+        color: green;
+}
+
+section pre .control_buttons::before {
+        display: block;
+        color: #888;
+        font-size: 15px;
+        font-weight: bold;
+        content: '▶';
+        margin-top: -3px;
+        cursor: pointer;
+}
+
+section .preContainer pre {
+  margin: 0;
+}
+
+section .preContainer {
+  margin: 6px 0;
+}
+
+section .preContainer {
+        display: flex;
+        flex-direction: column;
+}
+
+section .preContainer pre:not(:last-child) {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+}
+
+section .preContainer .response {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+	border: 1px solid #ccc;
+        border-top: 0;
+        padding: 10px;
+        font-family: monospace;
+        font-size: 12px;
+        overflow: auto;
+        white-space: nowrap;
+}
