@@ -1,5 +1,5 @@
 ---
-title: Implementing a Minimal Lisp to learn Lisp
+title: Implementing a minimal Lisp to learn Lisp
 publish_date: 29 March 2020
 js_script: script.js
 ---
