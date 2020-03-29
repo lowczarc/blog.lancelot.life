@@ -215,5 +215,6 @@ section .preContainer .response {
         font-family: monospace;
         font-size: 12px;
         overflow: auto;
+        position: relative;
         white-space: nowrap;
 }
