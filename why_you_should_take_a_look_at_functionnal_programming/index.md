@@ -62,6 +62,8 @@ We clearly see here that B and C can be computed in parallel of D
 
 ## Downsides
 
+⚠️ **Erratum:**⚠️ This part of the article isn't correct, I made a correction in the [following article](/implementing_a_minimal_lisp_to_learn_lisp/#erratum-on-the-last-article)
+
 Functionnal programming force us to make recursive algorithms instead of iterative ones, which can lead to a lack of performance.
 
 ```rust
