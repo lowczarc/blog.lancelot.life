@@ -288,7 +288,7 @@ Secondly, the fastest algorithm to compute the fibonnacci sequence is actually a
 ```mini-lisp
 (def % (λ x (λ y (- x (* (/ x y) y)))))
 (def ² (λ x (* x x)))
-(def get (λ l (λ i (if (= (len l) (- i 1)) (last l) (get (pop l) i)))))
+(def get (λ l (λ i (if (= (len l) (+ i 1)) (last l) (get (pop l) i)))))
 
 (def fdfibo
      (λ n
