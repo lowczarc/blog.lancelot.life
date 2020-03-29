@@ -1,6 +1,6 @@
 ---
 title: Implementing a Minimal Lisp to learn Lisp
-publish_date: 28 March 2020
+publish_date: 29 March 2020
 ---
 
 ::: caution
