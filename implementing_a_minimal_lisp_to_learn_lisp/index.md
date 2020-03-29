@@ -163,6 +163,8 @@ The first argument is the parameter name and the second is the body of the funct
         (if (< n 2)
             n
             (+ (fibo (- n 1)) (fibo (- n 2))))))
+
+(print (fibo 13))
 ```
 ::: subtitle
 A naive recursive function for fibonnacci
@@ -177,6 +179,8 @@ A lambda takes only one parameter but you can define multiple argument functions
            (if (= min max)
                (list)
                (push (range min (- max 1)) (- max 1))))))
+
+(print (range 0 10))
 ```
 ::: subtitle
 A function that creates a list containing all the integers between min and max
@@ -273,6 +277,8 @@ First, you can construct a recursive equivalent for any iterative function, in t
         (if (< n 3)
           (range 0 n)
           ((λ l (push l (+ (last l) (last (pop l))))) (ifibo (- n 1))))))
+
+(print (ifibo 13))
 ```
 ::: subtitle
 ifibo is a function which construct the nth first elements of the fibonnacci sequence with the same complexity as the iterative algorithm
@@ -292,6 +298,8 @@ Secondly, the fastest algorithm to compute the fibonnacci sequence is actually a
               ((λ fk (* fk (- (* 2 (fdfibo (+ (/ n 2) 1))) fk)))
                (fdfibo (/ n 2)))
               (+ (² (fdfibo (+ (/ n 2) 1))) (² (fdfibo (/ n 2))))))))
+
+(print (fdfibo 13))
 ```
 ::: subtitle
 Fast doubling fibo is the fastest way to compute the fibonnacci sequence
