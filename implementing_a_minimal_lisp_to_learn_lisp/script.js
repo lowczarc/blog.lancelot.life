@@ -107,6 +107,10 @@ WASM.then(() => {
         response.appendChild(document.createTextNode(`${output}\n`));
       }).then((Lisp) => {
         Lisp(lispPreElem.firstChild.firstChild.data);
+      }).catch((err) => {
+        if (err.message != "unreachable executed") {
+          response.appendChild(document.createTextNode(`Runtime error: ${err.message}`));
+        }
       });
     }
   
