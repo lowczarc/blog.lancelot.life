@@ -97,15 +97,43 @@ section p {
   border-radius: 4px;
 }
 
+code span.dt, code span.bu {
+  color: #80a0bf;
+}
+
+code span.cn {
+  color: #80a0bf;
+  font-weight: bold
+}
+
+code span.pp {
+  color: lightsalmon;
+  font-weight: bold;
+}
+
+code span.st, code span.dv, code span.vs {
+  color: #e9692c;
+}
+
+code span.kw, code span .im, code span .cf, code span .fu {
+  color: #f94d00;
+  font-weight: bold;
+
+}
+
+code span.co, code span.op {
+  color: gray;
+}
+
 section pre {
   display: block;
   font-family: monospace;
   white-space: pre-wrap;
-  background-color: #eee;
+  background-color: #333;
   padding: 10px;
   margin: 6px 0;
-  border: 1px solid #ccc;
-  color: black;
+  border: 1px solid #555;
+  color: white;
   font-size: 12px;
   border-radius: 6px;
 }
@@ -148,24 +176,32 @@ section pre code, section pre textarea {
 
 section pre textarea {
   border: none;
-  background-color: #eee;
+  color: white;
+  background-color: #333;
+}
+
+section pre::after {
+  display: block;
+  height: 0;
+  text-align: right;
+  padding-left: 10px;
 }
 
 section pre.rust::after {
   content: '🦀';
-  display: block;
-  height: 0;
-  text-align: right;
-  padding-left: 10px;
+}
+
+section pre.python::after {
+  content: '🐍';
+}
+
+section pre.ruby::after {
+  content: '💎';
 }
 
 section pre.mini-lisp::after {
   content: 'λ';
-  display: block;
-  height: 0;
-  text-align: right;
   font-weight: bold;
-  padding-left: 10px;
 }
 
 section pre .control_buttons {
@@ -173,12 +209,12 @@ section pre .control_buttons {
 }
 
 section pre .control_buttons.start:hover::before {
-  color: green;
+  color: #5b5;
 }
 
 section pre .control_buttons::before {
   display: block;
-  color: #888;
+  color: #aaa;
   font-size: 15px;
   font-weight: bold;
   content: '▶';
