@@ -34,19 +34,19 @@ First, it makes programming look more like maths and I think that's beautiful. �
 
 If you want to add a line of code you can add it anywhere, in functionnal programming there are no side effects, you can't break your code by adding a line before another because they can't influence each other.
 
-```
+```python
 A = something()
-// If you were to change the value of A here it would influence the value of B, because variables aren't mutable you can't do this in functionnal programming
+# If you were to change the value of A here it would influence the value of B, because variables aren't mutable you can't do this in functionnal programming
 B = something_else(A)
 ```
 
 Another really cool point: you can parallelize things really easily, if a constant doesn't use another constant in its definition (and reciprocally) you can do it in parallel and be sure they won't conflict with each other.
 
-```
+```python
 A = something1()
-B = something2(A) // Here you can't compute A and B in parallel
+B = something2(A) # Here you can't compute A and B in parallel
 C = a_slow_function(B)
-D = an_other_slow_function(A) // Here you can compute C and D in parallel
+D = an_other_slow_function(A) # Here you can compute C and D in parallel
 E = something3(C, D)
 ```
 
@@ -62,7 +62,9 @@ We clearly see here that B and C can be computed in parallel of D
 
 ## Downsides
 
+::: caution
 ⚠️ **Erratum:**⚠️ This part of the article isn't correct, I made a correction in the [following article](/implementing_a_minimal_lisp_to_learn_lisp/#erratum-on-the-last-article)
+:::
 
 Functionnal programming force us to make recursive algorithms instead of iterative ones, which can lead to a lack of performance.
 
