@@ -101,12 +101,12 @@ code span.dt, code span.bu {
   color: #80a0bf;
 }
 
-code span.cn {
+code span.cn, code span.va {
   color: #80a0bf;
   font-weight: bold
 }
 
-code span.pp {
+code span.pp, code span.fu {
   color: lightsalmon;
   font-weight: bold;
 }
@@ -115,14 +115,18 @@ code span.st, code span.dv, code span.vs {
   color: #e9692c;
 }
 
-code span.kw, code span .im, code span .cf, code span .fu {
+code span.kw, code span .im, code span .cf {
   color: #f94d00;
   font-weight: bold;
-
 }
 
 code span.co, code span.op {
   color: gray;
+}
+
+code span.al {
+  color: white;
+  font-weight: bold;
 }
 
 section pre {
